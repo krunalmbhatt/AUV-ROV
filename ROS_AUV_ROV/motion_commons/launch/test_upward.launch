@@ -1,0 +1,11 @@
+<launch>
+	<node name = "upward" pkg = "upward_motion" type = "upward" respawn = "true" output = "screen">
+		<param name="p_stablize" type="double" value="2.0" />
+		<param name="i_stablize" type="double" value="0" />
+		<param name="d_stablize" type="double" value="0" />
+		<param name="p_upward" type="double" value="4.0" />
+		<param name="i_upward" type="double" value="0.0" />
+		<param name="d_upward" type="double" value="0.0" />
+	</node>
+	<node name = "upward_test" pkg = "upward_motion" type = "upward_test" respawn = "true" output = "screen"/>
+</launch>
