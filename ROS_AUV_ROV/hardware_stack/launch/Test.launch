@@ -1,0 +1,6 @@
+<launch>
+	<node name="serial_node" pkg = "hardware_stack" type = "serial_node.sh" output = "screen"/>
+	<node name = "arduino" pkg = "hardware_stack" type = "arduino" output = "screen"/>
+	<node name = "yaw" pkg = "hardware_stack" type = "yaw" output = "screen"/>
+	<!--<node name = "IMU_Publisher" pkg = "hardware_stack" type = "IMU_Publisher" output = "screen"/> -->
+</launch>
