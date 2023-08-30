@@ -1,0 +1,6 @@
+<launch>
+	<include file = "$(find motion_commons)/launch/test_forward.launch" />
+	<include file = "$(find hardware_stack)/launch/Test.launch"/>
+	<node name = "zigzag_server" pkg = "test_task_master_launch" type = "zigzag_server" output = "screen"/>
+	<node name = "zigzag_client" pkg = "test_task_master_launch" type = "zigzag_client" output = "screen"/>
+</launch>

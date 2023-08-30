@@ -1,0 +1,4 @@
+<launch>
+	<node name="buoy_server" pkg="task_buoy" type="buoy_server" respawn="true"  output="screen"/>
+	
+</launch>

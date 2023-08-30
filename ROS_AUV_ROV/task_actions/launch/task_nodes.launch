@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find task_line)/launch/task_line.launch" />
+  <include file="$(find task_buoy)/launch/task_buoy.launch" />
+   <include file="$(find task_dropper)/launch/task_dropper.launch" />
+</launch>
